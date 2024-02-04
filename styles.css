@@ -1,0 +1,17 @@
+.magosArea {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.canvas {
+    /* background-color: purple; */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.interactionArea {
+    margin: 20px;
+}

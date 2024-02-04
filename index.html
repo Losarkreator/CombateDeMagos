@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo de Magos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mago-container {
+            width: 200px;
+            text-align: center;
+        }
+
+        #acciones {
+            width: 400px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="canvas">
+        <div class="magosArea">
+            <div class="mago-container">
+                <h2>Germain</h2>
+                <p>Vida: <span id="mago1-vida">50</span></p>
+                <p>Ataque: <span id="mago1-ataque">10</span></p>
+                <p>Defensa: <span id="mago1-defensa">5</span></p>
+            </div>
+            <div class="mago-container">
+                <h2>Yanu</h2>
+                <p>Vida: <span id="mago2-vida">50</span></p>
+                <p>Ataque: <span id="mago2-ataque">10</span></p>
+                <p>Defensa: <span id="mago2-defensa">5</span></p>
+            </div>
+        </div>
+
+        <div class="interactionArea">
+            <div id="mensajes">
+                <!-- Aquí se mostrarán los mensajes del juego -->
+            </div>
+
+            <div id="acciones" style="display: none;">
+                <!-- Aquí se mostrarán las opciones de combate -->
+                <button id="boton-atacar">Atacar</button>
+                <button id="boton-curarse">Curarse</button>
+            </div>
+
+            <div id="siONo" style="display: none;">
+                <button id="boton-Si">Si</button>
+                <button id="boton-No">No</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
